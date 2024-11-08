@@ -4,7 +4,7 @@
 // }
 // console.log("bye!");
 
-const fruits = require("./fruits");
+// const fruits = require("./fruits");
 
 //console.log(process.argv);
 
@@ -19,6 +19,10 @@ const fruits = require("./fruits");
 // console.log(math.PI);
 // console.log(math.mul(10, 5));
 
-const frt = require("./fruits");
-// console.log(frt);
-console.log(frt[0]);
+// const frt = require("./fruits");
+// // console.log(frt);
+// console.log(frt[0]);
+
+import { sum, PI } from "./math.js";
+console.log(sum(4, 6));
+console.log(PI);

@@ -32,4 +32,11 @@
 //   g: g,
 // };
 
-exports = 5;
+//exports = 5;//it is invalid for module.exports.
+
+//require vs import:we can not selectively load the pieces we need with require but import, we can selectively load only the pieces we need, which can save memory.
+
+export const sum = (a, b) => a + b;
+export const mul = (a, b) => a * b;
+export const PI = 3.141;
+export const g = 9.8;

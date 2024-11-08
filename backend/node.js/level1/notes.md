@@ -191,3 +191,62 @@ exp-> npm install figlet,
 ## package.json:
 
 -->it records the exact version of every installed dependency,including its sub-dependencies and their dependencies versions.
+
+--> the package.json file contains descriptive and functional metadata about a project,such as a name,version and dependencies.
+
+## create your own package.json:
+
+PS C:\Users\Asus\OneDrive\Desktop\backend\backend> cd .\Myproject\
+PS C:\Users\Asus\OneDrive\Desktop\backend\backend\Myproject> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (myproject)
+version: (1.0.0)  
+description: "this is my first project using Node"
+entry point: (index.js)  
+test command:  
+git repository:  
+keywords:  
+author: Soumya Ranajn Das
+license: (ISC)  
+About to write to C:\Users\Asus\OneDrive\Desktop\backend\backend\Myproject\package.json:
+
+{
+"name": "myproject",
+"version": "1.0.0",
+"description": "\"this is my first project using Node\"",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "Soumya Ranajn Das",
+"license": "ISC"
+}
+
+Is this OK? (yes) y
+
+PS C:\Users\Asus\OneDrive\Desktop\backend\backend\Myproject>
+
+## use packages locally and globally
+
+local packages:
+command:npm install <package_name> install a specific folder
+
+globall packages:
+command:npm install -g <package_nmae>install this folder for globally
+
+## import vs require:
+
+syntax: import{sum} from "./math.js";
+syntax:const sum=require("./math.js");
+
+//we can not selectively load the pieces we need with require but import, we can selectively load only the pieces we need, which can save memory.
+
+//loading is synchronous for 'require' but can be asynchronous for 'import'.
